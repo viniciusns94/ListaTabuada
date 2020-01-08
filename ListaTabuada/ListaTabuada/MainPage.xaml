@@ -6,11 +6,12 @@
              mc:Ignorable="d"
              x:Class="ListaTabuada.MainPage">
 
-    <StackLayout>
+    <StackLayout Margin="8">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="Tabuada" HorizontalOptions="Center" FontSize="40"/>
+        <Entry x:Name="entry_tabuada_Numero" Keyboard="Numeric" Placeholder="Infome um nº "/>
+        <Button x:Name="button_tabuada_Calcular" Text="Executar" Clicked="buttonCalcular_Clicked"/>
+        <ListView x:Name="listaview_tabuada" />
     </StackLayout>
 
 </ContentPage>

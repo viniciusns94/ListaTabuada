@@ -17,5 +17,18 @@ namespace ListaTabuada
         {
             InitializeComponent();
         }
+
+        private void buttonCalcular_Clicked(object sender, EventArgs e)
+        {
+            var n = Convert.ToInt32(entry_tabuada_Numero.Text);
+            List<string> itens = new List<string>();
+            string texto = "";
+            for(int i = 0; i < 11; i++)
+            {
+                texto = n + " X " + i + " = " + (n * i);
+                itens.Add(texto);
+            }
+            listaview_tabuada.ItemsSource = itens;
+        }
     }
 }
